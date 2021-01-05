@@ -233,6 +233,7 @@ class Watcher extends EventEmitter {
 			},
 
 			handle_result: (result: CompileResult) => {
+				console.log(result.print());
 				deferred.promise.then(() => {
 					const restart = () => {
 						this.crashed = false;
@@ -331,6 +332,7 @@ class Watcher extends EventEmitter {
 			},
 
 			handle_result: (result: CompileResult) => {
+				console.log(result.print());
 				fs.writeFileSync(
 					path.join(dest, 'build.json'),
 					JSON.stringify(result.to_json(manifest_data, this.dirs), null, '  ')

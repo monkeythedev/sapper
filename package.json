@@ -1,6 +1,6 @@
 {
-  "name": "sapper",
-  "version": "0.28.10",
+  "name": "@raythurnevoid/sapper",
+  "version": "0.28.10.webpack5-fix-log",
   "description": "The next small thing in web development, powered by Svelte",
   "bin": {
     "sapper": "./sapper"
